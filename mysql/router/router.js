@@ -1,8 +1,8 @@
 const express = require('express');
-const homies = require('../controller/')
+const homeCall = require('../controller/')
 
 const router = express.Router();
 
-router.get('/', homies);
+router.get('/', homeCall);
 
 module.exports = router
