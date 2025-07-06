@@ -2,7 +2,10 @@ const {Sequelize} = require ('sequelize');
 
 const sql = new Sequelize('SQS','root', 'root1234', {
     host:'mydbforlambda.c364equyqci1.ap-south-1.rds.amazonaws.com',
-    dialect: 'mysql'
+    dialect: 'mysql',
+     define: {
+        timestamps: false
+    }
 });
 
 (async () => {
